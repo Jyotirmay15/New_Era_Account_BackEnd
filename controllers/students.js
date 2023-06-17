@@ -153,7 +153,7 @@ exports.createStudentEntry = (req, res, next) => {
     phone: contact,
     class: studentclass,
     aadhar: aadhar,
-    image: img.path,
+    image: img ? img.path : "",
     academicsTotal: academicsTotal,
     academicsReceived: academicsReceived,
     academicsPending: academicsPending,
